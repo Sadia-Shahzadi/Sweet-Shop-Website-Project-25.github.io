@@ -1,0 +1,458 @@
+/* Google Fonts  */
+
+ /* 1 */  @import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
+
+/* 2 */  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    /* font-family: 'Yesteryear', handwriting; */
+    font-family: 'Raleway', sans-serif;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.5)),url(../img/sweets.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+nav{
+    padding: 2% 5%;
+    display: flex;
+}
+nav .logo{
+    max-width: 100%;
+    height: 8vh;
+    cursor: pointer;
+}
+nav ul{
+    text-align: right;
+    flex: 1;
+}
+nav ul li{
+    display: inline-block;
+    padding: 20px 20px;
+}
+nav ul li a{
+    color: white;
+    font-size: 1rem;
+}
+nav ul li a:hover{
+    color: yellow;
+}
+nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    display: block;
+    transition: .5s;
+    background-color: yellow;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.home{
+    color: yellow;
+}
+.home::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    transition: .5s;
+    background-color: yellow;
+}
+.head{
+    text-align: center;
+    color: white;
+    margin-top: 8%;
+}
+.head h1{
+    font-size: 6rem;
+    font-weight: 500;
+    font-family: 'Yesteryear', handwriting;
+}
+.head h4{
+    font-size: 15px;
+    font-weight: 200;
+    margin-bottom: 4rem;
+}
+.btn{
+    border-radius: 80px;
+    background-color: #ef1548;
+    color: white;
+    padding: 14px 4rem;
+    font-size: 1.2rem;
+    transition: .5s;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.btn i{
+    padding-right: 10px;
+}
+.btn:hover{
+    background-color: #f84660;
+}
+/* Login Container  */
+.login{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background-color: #ef1548;
+    margin: 1% 9%;
+    width: 30%;
+    min-height: 60.4vh;
+    border-radius: 5px;
+    transition: .8s;
+    clip-path: polygon(0 0,100% 0,100% 0, 0 0);
+}
+.login:hover{
+    background-color: #ec687c;
+}
+.login.active{
+    transition: 1s;
+    clip-path: polygon(0 0,100% 0,100% 100%, 0 100%);
+}
+.login h1{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Yesteryear', handwriting;
+}
+.login input{
+    margin: 10px 20px;
+    min-width: 85%;
+    padding: 10px 10px;
+}
+.button{
+    background-color: black;
+    color: white;
+    padding: 10px 9.6rem;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+.login .button{
+    padding: 10px 8.2rem;
+    margin-right: 10px;
+}
+.login .button2{
+    padding: 10px 8.9rem;
+    margin-top: 20px;
+}
+.button:hover{
+    background-color: white;
+    color: black;
+    transition: .4s;
+    font-weight: 600;
+}
+.flex5{
+    padding-top: 50px;
+    margin-left: 22px;
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+}
+.flex5 h5{
+    padding-bottom: 10px;
+}
+.flex5 h5 span{
+    color: black;
+    cursor: pointer;
+}
+.flex5 h5 span::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: .5s;
+}
+.flex5 h5 span:hover::after{
+    width: 20%;
+    margin-left: 8rem;
+}
+/* expertise  */
+.expertise{
+    background-color: #fcb900;
+    width: 100%;
+    height: 100vh;
+}
+.text{
+    text-align: center;
+    color: black;
+    padding-top: 8%; 
+}
+.text h2{
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: 'Yesteryear', handwriting;
+}
+.text h4{
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 1.5rem;
+    line-height: 25px;
+}
+
+.packages{
+    display: flex;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+.p1{
+    background-color: white;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: .3s;
+    margin: 20px;
+    height: 83vh;
+    text-align: center;
+    margin-top: 5%;
+}
+.p1:hover{
+    background-color: black;
+    color: white;
+}
+.p1 img{
+    width: 100%;
+}
+.p1 img:hover{
+    transform: scaleY(1.1);
+    transition: 1s;
+}
+.p1 h3{
+    padding-top: 20px;
+    font-size: 2.4rem;
+    font-weight: 600;
+    font-family: 'Yesteryear', handwriting;
+}
+.p1 p{
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.p1 p,.icon,h4{
+    padding: 5px 20px;
+}
+.icon i{
+    color: darkorange;
+    font-size: 20px;
+}
+.p1 h4{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.p1 h4 span{
+    font-size: 15px;
+    padding-left: 10px;
+    text-decoration: line-through;
+}
+
+.flex{
+    display: flex;
+    margin-top: 18%;
+}
+.one-side{
+    margin: 0 55px;
+}
+.other-side{
+    margin-top: 10%;
+}
+.other-side h1{
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: 'Yesteryear', handwriting;
+    padding-bottom: 20px;
+}
+.other-side span{
+    content: "";
+    width: 10%;
+    height: 2px;
+    display: block;
+    background-color: #ef1548;
+}
+.other-side p{
+    font-size: 18px;
+    font-weight: 200;
+    margin-top: 2rem;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    padding-right: 7rem;
+    text-align: justify;
+    margin-bottom: 3rem;
+}
+
+
+.orders{
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.85)),url(../img/cta-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+}
+.orders h1{
+    padding-top: 12%;
+    font-size: 3.2rem;
+    font-weight: 500;
+    font-family: 'Yesteryear', handwriting;
+    padding-bottom: 10px;
+}
+.orders h5{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+}
+.orders h4{
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: 'Yesteryear', handwriting;
+    padding-top: 20px;
+}
+
+
+.testimonial{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url(../img/pic15-free-img.png);
+    background-position: center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    color: black;
+    text-align: center;
+}
+.testimonial img{
+    margin-top: 10rem;
+}
+.overlay-img {
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    margin-left: 21.55rem;
+}
+.overlay-img h6:hover{
+    background-color: black;
+    transition: .5s;
+}
+body{
+    overflow-x: hidden;
+}
+.overlay-img.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay-img h6 {
+    background-color: #ef1548;
+    padding: 40px;
+    margin-top: 290rem;
+    border-radius: 50px;
+    border: 2px solid black;
+    max-width: 400px;
+    line-height: 1.9;
+    /* text-align: center; */
+  }
+  .overlay-img span{
+    font-family: 'Yesteryear', handwriting;
+    padding-top: 4rem;
+    font-size: 3rem;
+  }
+  .ff{
+    font-size: 2rem;
+  }
+  #testi {
+    cursor: pointer;
+    position: relative;
+  }
+.testimonial p{
+    font-family: 'Yesteryear', handwriting;
+    padding-top: 60px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.testimonial h1{
+    font-family: 'Yesteryear', handwriting;
+    padding-top: 4rem;
+    font-size: 3rem;
+}
+
+.footer{
+    width: 100%;
+    height: 100vh;
+    background-color: #ef1548;
+    color: white;
+}
+.footer h1{
+    font-family: 'Yesteryear', handwriting;
+    font-weight: 500;
+    padding: 5rem 0;
+    font-size: 3rem;
+    text-align: center;
+}
+.sides{
+    display: flex;
+}
+.form input,textarea{
+    padding: 15px 80px;
+    margin-left: 4rem;
+    font-size: 1rem;
+    color: #ef1548;
+    font-weight: bolder;
+}
+
+.content{
+    padding-left: 40px;
+    padding-top: 10px;
+}
+.content h5{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.content h2{
+    padding-top: 20px;
+    font-family: 'Yesteryear', handwriting;
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+.icons i{
+    background-color: white;
+    padding: 10px 15px;
+    color: black;
+    font-size: 25px;
+    border-radius: 2px;
+}
+.icons i:hover{
+    background-color: #f84660;
+    border: 1px solid white;
+    color: white;
+}
+
+
+.copyright{
+    border-top: 1px solid white;
+    background-color: #ef1548;
+}
+.copyright h1{
+    padding-top: 15px;
+    color: white;
+    font-size: 1.2rem;
+}

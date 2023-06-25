@@ -1,0 +1,345 @@
+/* Google Fonts  */
+
+ /* 1 */  @import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
+
+/* 2 */  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    /* font-family: 'Yesteryear', handwriting; */
+    font-family: 'Raleway', sans-serif;
+} 
+.header{
+    width: 100%;
+    height: 180vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.5)),url(../img/cake-biscuits-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+nav{
+    padding: 2% 5%;
+    display: flex;
+}
+nav .logo{
+    max-width: 100%;
+    height: 8vh;
+    cursor: pointer;
+}
+nav ul{
+    text-align: right;
+    flex: 1;
+}
+nav ul li{
+    display: inline-block;
+    padding: 20px 20px;
+}
+nav ul li a{
+    color: white;
+    font-size: 1rem;
+}
+nav ul li a:hover{
+    color: yellow;
+}
+nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    display: block;
+    transition: .5s;
+    background-color: yellow;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.contact{
+    color: yellow;
+}
+.contact::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    transition: .5s;
+    background-color: yellow;
+}
+
+.head{
+    text-align: center;
+    color: white;
+    margin-top: 8%;
+}
+.head h1{
+    font-size: 5rem;
+    font-weight: 500;
+    font-family: 'Yesteryear', handwriting;
+}
+.head span{
+    content: "";
+    width: 10%;
+    height: 3px;
+    margin-left: 38rem;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    display: block;
+    background-color: #ef1548;
+}
+.head h4{
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 1.8;
+    margin-bottom: 4rem;
+}
+.flex-sides{
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 10rem;
+}
+.left-side{
+    background-color: black;
+    color: white;
+    min-width: 35%;
+    padding: 30px 40px;
+}
+.left-side:hover{
+    background-color: #ef1548;
+    transition: .5s;
+}
+.hh{
+    text-align: center;
+}
+.hh h1{
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'Yesteryear', handwriting;
+}
+.hh span{
+    content: "";
+    width: 50%;
+    height: 2px;
+    display: block;
+    background-color: #ef1548;
+    margin-bottom: 10px;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+.hh h3{
+    font-size: 1.7rem;
+    padding: 10px 0;
+    font-weight: 500;
+    font-family: 'Yesteryear', handwriting;
+}
+.hh h5{
+    font-size: 15px;
+    text-align: center;
+}
+.hh h2{
+    font-size: 1.7rem;
+    padding-top: 40px;
+    font-weight: 500;
+    font-family: 'Yesteryear', handwriting;
+}
+.right-side{
+    background-color: aliceblue;
+    height: 60vh;
+    width: 90%;
+    padding-top: 20px;
+}
+.right-side .form input{
+    padding: 15px 50px;
+    margin-left: 2rem;
+}
+.right-side .form textarea{
+    margin-left: 2rem;
+}
+.btn{
+    border-radius: 80px;
+    background-color: #ef1548;
+    color: white;
+    padding: 14px 4rem;
+    font-size: 1.2rem;
+    transition: .5s;
+    margin-left: 2rem;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: #f84660;
+}
+/* Login Container  */
+.login{ 
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background-color: #ef1548;
+    margin: 1% 9%;
+    width: 30%;
+    min-height: 60.4vh;
+    border-radius: 5px;
+    transition: .8s;
+    clip-path: polygon(0 0,100% 0,100% 0, 0 0);
+}
+.login:hover{
+    background-color: #ec687c;
+}
+.login.active{
+    transition: 1s;
+    clip-path: polygon(0 0,100% 0,100% 100%, 0 100%);
+}
+.login h1{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Yesteryear', handwriting;
+}
+.login input{
+    margin: 10px 20px;
+    min-width: 85%;
+    padding: 10px 10px;
+}
+.button{
+    background-color: black;
+    color: white;
+    padding: 10px 9.6rem;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+.login .button{
+    padding: 10px 8.2rem;
+    margin-right: 10px;
+}
+.login .button2{
+    padding: 10px 8.9rem;
+    margin-top: 20px;
+}
+.button:hover{
+    background-color: white;
+    color: black;
+    transition: .4s;
+    font-weight: 600;
+}
+.flex{
+    padding-top: 50px;
+    margin-left: 22px;
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+}
+.flex h5{
+    padding-bottom: 10px;
+}
+.flex h5 span{
+    color: black;
+    cursor: pointer;
+}
+.flex h5 span::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: .5s;
+}
+.flex h5 span:hover::after{
+    width: 20%;
+    margin-left: 8rem;
+}
+
+
+.social{
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    padding: 6rem 22rem;
+    width: 100%;
+    /* height: 100vh; */
+}
+.social .icons h2{
+    font-size: 2.7rem;
+    padding-bottom: 20px;
+    font-weight: 540;
+    font-family: 'Yesteryear', handwriting;
+}
+.social .content h5{
+    padding-bottom: 15px;
+}
+.social .content i{
+    padding-right: 15px;
+    font-size: 1.3rem;
+}
+
+.location{
+    margin: 0rem 0;
+}
+/* Footer  */
+.footer{
+    width: 100%;
+    height: 100vh;
+    background-color: #ef1548;
+    color: white;
+}
+.footer h1{
+    font-family: 'Yesteryear', handwriting;
+    font-weight: 500;
+    padding: 5rem 0;
+    font-size: 3rem;
+    text-align: center;
+}
+.sides{
+    display: flex;
+}
+.form input,textarea{
+    padding: 15px 80px;
+    margin-left: 4rem;
+    font-size: 1rem;
+    color: #ef1548;
+    font-weight: bolder;
+}
+
+.content{
+    padding-left: 40px;
+    padding-top: 10px;
+}
+.content h5{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.content h2{
+    padding-top: 20px;
+    font-family: 'Yesteryear', handwriting;
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+.icons i{
+    background-color: white;
+    padding: 10px 15px;
+    color: black;
+    font-size: 25px;
+    border-radius: 2px;
+}
+.icons i:hover{
+    background-color: #f84660;
+    border: 1px solid white;
+    color: white;
+}
+
+
+.copyright{
+    border-top: 1px solid white;
+    background-color: #ef1548;
+}
+.t h1{
+    padding-top: 15px;
+    color: white;
+    font-size: 1.2rem;
+}
